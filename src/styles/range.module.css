@@ -1,0 +1,50 @@
+.rangeContainer {
+  width: 100%;
+  position: relative;
+}
+
+.rangeLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangeInput {
+  width: 60px;
+  text-align: center;
+}
+
+.rangeTrack {
+  position: relative;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.rangeProgress {
+  position: absolute;
+  height: 100%;
+  background: #000000;
+  border-radius: 5px;
+}
+
+.rangeThumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.rangeThumb:hover {
+  width: 25px;
+  height: 25px;
+  cursor: grab;
+}
+
+.rangeThumb:active {
+  cursor: grabbing;
+}
